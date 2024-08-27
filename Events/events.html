@@ -31,7 +31,12 @@
     <main>
         <div class="content-area">
             <h1>События</h1>
-            <!-- Your content goes here -->
+
+            <!-- Centered Square Block -->
+            <div class="centered-block" onclick="openModal()">
+                <img src="/Imagas/" alt="Фото" class="block-image">
+                <p class="block-text">Нажмите для подробностей</p>
+            </div>
         </div>
     </main>
 
@@ -56,6 +61,16 @@
             </a>
         </div>
     </footer>
+
+    <!-- Modal Window -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>
+
+            </p>
+        </div>
+    </div>
 
     <script src="events.js"></script>
 </body>
