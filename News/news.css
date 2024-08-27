@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    background-color: #D2A700;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Side Menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu ul li a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.close-button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Main Content */
+.content-area {
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+    background-color: #000;
+}
+
+/* Bottom Navigation Bar */
+.bottom-bar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav-item {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item.active {
+    color: #D2A700;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .top-bar {
+        padding: 15px 20px;
+    }
+
+    .menu-button {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .side-menu ul li a {
+        font-size: 22px;
+    }
+
+    .side-menu ul li a img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+}
