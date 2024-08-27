@@ -24,3 +24,18 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function openModal() {
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    if (event.target === document.getElementById('modal')) {
+        closeModal();
+    }
+}
