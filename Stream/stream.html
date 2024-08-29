@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стрим - Кемо</title>
+    <title>Стрим - Кемо и Shomer TV</title>
     <link rel="stylesheet" href="stream.css">
 </head>
 <body>
@@ -18,7 +18,6 @@
     <!-- Side Menu -->
     <nav id="sideMenu" class="side-menu">
         <button class="close-button" onclick="toggleSideMenu()">×</button>
-
         <ul>
             <li><a href="/News/news.html"><img src="/icon/news.svg" alt="Новости"> Новости</a></li>
             <li><a href="/Stream/stream.html"><img src="/icon/video.png" alt="Стрим"> Стрим</a></li>
@@ -30,8 +29,10 @@
     <!-- Main Content -->
     <main>
         <div class="content-area">
-            
-            <!-- Your content goes here -->
+            <h2>Активные трансляции</h2>
+            <div id="streams-container" class="streams-container">
+                <!-- Активные трансляции будут загружены сюда -->
+            </div>
         </div>
     </main>
 
@@ -42,7 +43,7 @@
                 <img src="/icon/news.svg" alt="Новости">
                 <span>Новости</span>
             </a>
-            <a href="/Stream/stream.html" class="nav-item">
+            <a href="/Stream/stream.html" class="nav-item active">
                 <img src="/icon/video.png" alt="Стрим">
                 <span>Стрим</span>
             </a>
@@ -50,7 +51,7 @@
                 <img src="/icon/sgop.png" alt="Магазин">
                 <span>Магазин</span>
             </a>
-            <a href="/Events/events.html" class="nav-item active">
+            <a href="/Events/events.html" class="nav-item">
                 <img src="/icon/event.svg" alt="События">
                 <span>События</span>
             </a>
